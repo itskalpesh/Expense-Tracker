@@ -5,9 +5,9 @@ A simple, menu-driven Expense Tracker developed using Python as the final projec
 
 1. Project Description
 
-The Expense Tracker is a command-line application that helps users record and manage daily expenses. Users can add expenses, view saved records, and calculate their total spending.
+- The Expense Tracker is a command-line application that helps users record and manage daily expenses. Users can add expenses, view saved records, and calculate their total spending.
 
-The application stores expense records in a CSV file, allowing previously saved records to be loaded when the program starts again.
+- The application stores expense records in a CSV file, allowing previously saved records to be loaded when the program starts again.
 
 2. Project Objectives
 
@@ -34,14 +34,15 @@ The application stores expense records in a CSV file, allowing previously saved 
 
 4. Technologies Used
 
-Technology| Purpose
-Python 3| Application development
-"csv" module| Reading and writing expense records
-"datetime" module| Recording expense dates
-"os" module| Checking whether the CSV file exists
-Git| Version control
-GitHub| Online source-code hosting
-VS Code or IDLE| Writing and executing Python code
+| Technology | Purpose |
+|---|---|
+| Python 3 | Application development |
+| `csv` module | Reading and writing expense records |
+| `datetime` module | Recording expense dates |
+| `os` module | Checking whether the CSV file exists |
+| Git | Version control |
+| GitHub | Online source-code hosting |
+| VS Code or IDLE | Writing and executing Python code |
 
 5. Python Concepts Used
 
@@ -64,6 +65,7 @@ This project demonstrates the following concepts:
 
 6. Project Structure
 
+```PowerShell
 Expense-Tracker/
 │
 ├── main.py
@@ -78,6 +80,7 @@ Expense-Tracker/
 │
 └── docs/
     └── Week_6_Project_Report.md
+```
 
 File descriptions:
 
@@ -106,34 +109,35 @@ Step 1: Download the Project
 
 Download the repository from GitHub or clone it using:
 
-git clone https://github.com/YOUR_USERNAME/Expense-Tracker.git
-
-Replace "YOUR_USERNAME" with your actual GitHub username.
+git clone https://github.com/itskalpesh/Expense-Tracker.git
 
 Step 2: Open the Project Folder
 
+```
 cd Expense-Tracker
+```
 
 Step 3: Verify Python Installation
-
+```
 python --version
+```
 
 On some systems, use:
-
+```
 python3 --version
-
+```
 Step 4: Run the Application
-
+```
 python main.py
-
+```
 If your system uses "python3", run:
-
+```
 python3 main.py
-
+```
 9. How to Use the Application
 
 When the program starts, the following menu appears:
-
+```
 ==============================
        EXPENSE TRACKER
 ==============================
@@ -143,19 +147,19 @@ When the program starts, the following menu appears:
 4. Exit
 ==============================
 Enter your choice:
-
+```
 Option 1: Add Expense
 
 Enter the category, description, and amount.
 
 Example:
-
+```
 --- Add Expense ---
 Enter category: Food
 Enter description: Lunch
 Enter amount: 150
 Expense added successfully!
-
+```
 Option 2: View Expenses
 
 Display all saved expense records, including their dates, categories, descriptions, and amounts.
@@ -165,9 +169,9 @@ Option 3: Calculate Total
 Calculate the total amount of all loaded expense records.
 
 Example:
-
+```
 Total Expenses: Rs. 150.00
-
+```
 Option 4: Exit
 
 Exit the application safely.
@@ -175,12 +179,12 @@ Exit the application safely.
 10. Sample Data
 
 Example expense records:
-
+```
 Date| Category| Description| Amount
 2026-10-18| Food| Lunch| ₹150.00
 2026-10-18| Travel| Bus Ticket| ₹40.00
 2026-10-18| Education| Notebook| ₹60.00
-
+```
 Example total: ₹250.00
 
 These are illustrative sample records. The application uses the current date for newly added expenses. Use sample data when demonstrating the project.
@@ -201,15 +205,16 @@ Appropriate messages are displayed to help the user understand the problem.
 
 The application should be tested using the following scenarios:
 
-Test| Expected Result
-Add a valid expense| Expense is saved successfully
-View saved expenses| Saved records are displayed
-Calculate total| Correct total is displayed
-Enter an invalid amount| Error message appears
-Enter a zero or negative amount| Amount is rejected
-Leave required fields empty| Input is rejected
-Enter an invalid menu choice| Invalid-choice message appears
-Restart after saving an expense| Saved records are loaded again
+| Test | Expected Result |
+|---|---|
+| Add a valid expense | Expense is saved successfully |
+| View saved expenses | Saved records are displayed |
+| Calculate total | Correct total is displayed |
+| Enter an invalid amount | Error message appears |
+| Enter a zero or negative amount | Amount is rejected |
+| Leave required fields empty | Input is rejected |
+| Enter an invalid menu choice | Invalid-choice message appears |
+| Restart after saving an expense | Saved records are loaded again |
 
 Run each test and verify the actual result before reporting it as passed.
 
@@ -238,20 +243,20 @@ Possible enhancements include:
 15. Version Control with Git
 
 The project can be tracked and uploaded to GitHub using:
-
+```
 git init
 git add main.py README.md requirements.txt
 git commit -m "Initial Expense Tracker project"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/Expense-Tracker.git
 git push -u origin main
-
+```
 If the repository has already been initialized and connected, do not repeat "git init" or "git remote add origin" unnecessarily. Commit and push subsequent changes using:
-
+```
 git add .
 git commit -m "Update Expense Tracker project"
 git push
-
+```
 Before using "git add .", check "git status" and ensure that personal or confidential data will not be uploaded.
 
 16. Screenshots
@@ -259,14 +264,22 @@ Before using "git add .", check "git status" and ensure that personal or confide
 Add genuine screenshots of the following application features to the "screenshots/" folder:
 
 1. Main menu.
+![alt text](screenshots/menu.png)
 2. Adding an expense.
+![alt text](screenshots/add.png)
 3. Viewing saved expenses.
+![alt text](screenshots/view.png)
 4. Calculating total expenses.
+![alt text](screenshots/total.png)
 5. Handling invalid input.
+![alt text](screenshots/invalid.png)
 6. GitHub repository showing the uploaded files.
+![alt text](screenshots/git.png)
+7. Git Commands
+![alt text](screenshots/git-cmd.png)
 
 17. Author Information
-
+```
 Student Name: Kalpesh
 
 Internship Organization: InternNova
@@ -278,91 +291,10 @@ Assignment: Week 6 — Git, GitHub & Final Python Project
 Project Title: Expense Tracker — A Python-Based Expense Management System
 
 GitHub Repository: Add your actual repository URL here.
+```
 
 18. Conclusion
 
 The Expense Tracker is a practical Python project that demonstrates fundamental programming, object-oriented programming, CSV file handling, input validation, and exception handling.
 
 The project also introduces version control using Git and source-code hosting through GitHub. It provides a foundation for developing more advanced expense management applications with reporting, visualization, and budget management features.
-
----
-
-Output :
-
-```python
-PS D:\Data\Projects\InterNova> python -u "d:\Data\Projects\InterNova\Week-6\Expense-Tracker\main.py"
-
-==============================
-       EXPENSE TRACKER
-==============================
-1. Add Expense
-2. View Expenses
-3. Calculate Total
-4. Exit
-==============================
-Enter your choice: 1
-
---- Add Expense ---
-Enter category: Food
-Enter description: Lunch
-Enter amount: 150
-Expense added successfully!
-
-==============================
-       EXPENSE TRACKER
-==============================
-1. Add Expense
-2. View Expenses
-3. Calculate Total
-4. Exit
-==============================
-Enter your choice: 1
-
---- Add Expense ---
-Enter category: Travel
-Enter description: Bus Ticket
-Enter amount: 40
-Expense added successfully!
-
-==============================
-       EXPENSE TRACKER
-==============================
-1. Add Expense
-2. View Expenses
-3. Calculate Total
-4. Exit
-==============================
-Enter your choice: 2
-
---- All Expenses ---
-
-Expense 1:
-Date: 2026-10-18 | Category: Food | Description: Lunch | Amount: Rs. 150.00
-
-Expense 2:
-Date: 2026-10-18 | Category: Travel | Description: Bus Ticket | Amount: Rs. 40.00
-
-==============================
-       EXPENSE TRACKER
-==============================
-1. Add Expense
-2. View Expenses
-3. Calculate Total
-4. Exit
-==============================
-Enter your choice: 3
-
-Total Expenses: Rs. 190.00
-
-==============================
-       EXPENSE TRACKER
-==============================
-1. Add Expense
-2. View Expenses
-3. Calculate Total
-4. Exit
-==============================
-Enter your choice: 4
-Thank you for using Expense Tracker!
-
-```
